@@ -12,6 +12,9 @@ export default function TabLayout() {
       <Drawer.Screen name="index" />
       <Drawer.Screen name="cart" />
       <Drawer.Screen name="explore" />
+      <Drawer.Screen name="profile" />
+      <Drawer.Screen name="salons" />
+      <Drawer.Screen name="chat" />
     </Drawer>
   );
 }

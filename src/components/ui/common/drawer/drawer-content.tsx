@@ -13,62 +13,62 @@ const routes = [
   {
     icon: 'home',
     label: 'Acceuil',
-    link: '/',
+    link: 'index',
   },
   {
     icon: 'location-on',
     label: 'Explore salon',
-    link: '/salon',
+    link: 'salons/index',
   },
   {
     icon: 'explore',
     label: 'Tout les salons',
-    link: '/salons',
+    link: 'explore',
   },
   {
     icon: 'store',
     label: 'Marketplace',
-    link: '/marketplace',
+    link: 'marketplace/index',
   },
   {
     icon: 'person-pin',
     label: 'Profile',
-    link: '/profile',
+    link: 'profile',
   },
   {
     icon: 'favorite',
     label: 'Favoris',
-    link: '/favorites',
+    link: 'favorites',
   },
   {
     icon: 'access-time',
     label: 'Reservations',
-    link: '/reservations',
+    link: 'reservations',
   },
   {
     icon: 'message',
     label: 'Messages',
-    link: '/chat',
+    link: 'chat',
   },
   {
     icon: 'shopping-bag',
     label: 'Mes commandes',
-    link: '/orders',
+    link: 'orders',
   },
   {
     icon: 'email',
     label: 'Contactez nous',
-    link: '/contact',
+    link: 'contact',
   },
   {
     icon: 'language',
     label: 'Choisir language',
-    link: '/update-language',
+    link: 'update-language',
   },
   {
     icon: 'logout',
-    label: 'Choisir language',
-    link: '/log-out',
+    label: 'Deconnexion',
+    link: 'log-out',
   },
 ];
 
