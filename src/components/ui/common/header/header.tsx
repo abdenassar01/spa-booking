@@ -10,6 +10,10 @@ export function Header() {
       <TouchableOpacity onPress={() => dispatch({ type: 'TOGGLE_DRAWER' })}>
         <Image source={require('assets/icons/menu.png')} className="size-7" />
       </TouchableOpacity>
+      <Image
+        className="h-6 w-32"
+        source={require('assets/icons/logo/header-logo.png')}
+      />
       <View className="flex-row gap-1">
         <TouchableOpacity onPress={() => navigate('/cart')}>
           <Image source={require('assets/icons/cart.png')} className="size-7" />
