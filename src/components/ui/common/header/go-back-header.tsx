@@ -10,7 +10,7 @@ export function WithGoBackHeader() {
       <TouchableOpacity onPress={() => canGoBack() && back()}>
         <Image source={require('assets/icons/back.png')} className="size-7" />
       </TouchableOpacity>
-      <View className="flex-row gap-4">
+      <View className="flex-row gap-1">
         <TouchableOpacity onPress={() => navigate('/cart')}>
           <Image source={require('assets/icons/cart.png')} className="size-7" />
         </TouchableOpacity>

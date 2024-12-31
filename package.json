@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "^4.0.0",
+    "@expo/vector-icons": "^14.0.4",
     "@gorhom/bottom-sheet": "^5.0.5",
     "@hookform/resolvers": "^3.9.0",
     "@react-navigation/drawer": "^7.1.1",
