@@ -32,19 +32,15 @@ export default function RootLayout() {
       style={{ flex: 1 }}
     >
       <BottomSheetModalProvider>
-        <Stack>
-          <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
-          <Stack.Screen name="products/[id]" options={{ headerShown: false }} />
-          <Stack.Screen name="checkout" options={{ headerShown: false }} />
+        <Stack screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="(drawer)" />
+          <Stack.Screen name="products/[id]" />
           <Stack.Screen
             name="profile/address"
             options={{ headerShown: false }}
           />
-          <Stack.Screen name="orders" options={{ headerShown: false }} />
-          <Stack.Screen
-            name="payment-success"
-            options={{ headerShown: false }}
-          />
+          <Stack.Screen name="orders" />
+          <Stack.Screen name="checkout" />
           <Stack.Screen name="+not-found" />
         </Stack>
       </BottomSheetModalProvider>

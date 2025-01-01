@@ -22,7 +22,7 @@ export default function Checkout() {
             <Text className="text-sm font-medium text-gray">Total prix</Text>
             <Text className="text-lg font-semibold">459 Dhs</Text>
           </View>
-          <Link className="w-[70%]" href="/payment-success">
+          <Link className="w-[70%]" href="/checkout/payment-success">
             <View className="w-full items-center justify-center rounded-full bg-primary p-4">
               <Text className="font-medium text-white">Commander</Text>
             </View>
