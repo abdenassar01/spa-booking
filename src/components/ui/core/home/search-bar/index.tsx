@@ -3,7 +3,7 @@ import { gray } from 'configs/colors';
 import React from 'react';
 import { View } from 'react-native';
 
-import { Input } from '@/components/ui';
+import { Input } from '@/components/ui/common';
 
 interface SearchBarProps {
   onChange?: (text: string) => void;
