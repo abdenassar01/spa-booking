@@ -3,7 +3,10 @@ import React from 'react';
 import { Dimensions, ScrollView, Text, View } from 'react-native';
 
 import {
+  CartProductList,
+  CartSummary,
   PaymentLivraisonSection,
+  PaymentMethod,
   RootWrapper,
   WithGoBackHeader,
 } from '@/components/ui';
@@ -13,8 +16,15 @@ export default function Checkout() {
   return (
     <RootWrapper className="container">
       <WithGoBackHeader isCart />
-      <ScrollView className="mt-4" style={{ height: height - 170 }}>
+      <ScrollView
+        contentContainerClassName="gap-3"
+        className="mt-4"
+        style={{ height: height - 170 }}
+      >
         <PaymentLivraisonSection />
+        <CartProductList />
+        <PaymentMethod />
+        <CartSummary />
       </ScrollView>
       <View className="border-t border-border pt-3">
         <View className="container flex-row items-center justify-between gap-5">
