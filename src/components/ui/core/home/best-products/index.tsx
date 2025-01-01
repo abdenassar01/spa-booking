@@ -2,7 +2,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { FlashList } from '@shopify/flash-list';
 import colors from 'configs/colors';
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { View } from 'react-native';
 
 import { ProductCard } from '@/components/ui/common';
 const products = [
@@ -99,12 +99,6 @@ const products = [
 export function BestProductsSection() {
   return (
     <View>
-      <View className="flex-row items-center justify-between">
-        <Text className="text-base font-bold">Meilleurs choix</Text>
-        <TouchableOpacity>
-          <Text className="text-sm text-primary underline">Voir Tout</Text>
-        </TouchableOpacity>
-      </View>
       <FlashList
         contentContainerClassName="mt-2"
         ItemSeparatorComponent={() => <View className="h-3" />}

@@ -1,13 +1,28 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 
-import { RootWrapper, WithGoBackHeader } from '@/components/ui';
+import {
+  BestProductsSection,
+  CategoriesFilter,
+  Filter,
+  Header,
+  RootWrapper,
+  SearchBar,
+} from '@/components/ui';
 
 export default function ProductsList() {
   return (
     <RootWrapper className="container">
-      <WithGoBackHeader />
-      <Text>List of products</Text>
+      <Header />
+      <ScrollView
+        contentContainerClassName="gap-3 mt-3"
+        showsVerticalScrollIndicator={false}
+      >
+        <SearchBar onChange={(text) => console.log(text)} />
+        <Filter />
+        <CategoriesFilter />
+        <BestProductsSection />
+      </ScrollView>
     </RootWrapper>
   );
 }

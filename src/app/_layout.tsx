@@ -1,6 +1,7 @@
 import 'react-native-reanimated';
 import '../../global.css';
 
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -30,11 +31,12 @@ export default function RootLayout() {
       className="bg-backgroundSecondary"
       style={{ flex: 1 }}
     >
-      <Stack>
-        <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
-        <Stack.Screen name="filter-products" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
+      <BottomSheetModalProvider>
+        <Stack>
+          <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+          <Stack.Screen name="+not-found" />
+        </Stack>
+      </BottomSheetModalProvider>
       <StatusBar style="auto" />
     </GestureHandlerRootView>
   );

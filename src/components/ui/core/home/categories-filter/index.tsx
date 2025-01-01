@@ -1,4 +1,5 @@
 import colors from 'configs/colors';
+import { useRouter } from 'expo-router';
 import React from 'react';
 import { Image, Text, TouchableOpacity } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -12,6 +13,7 @@ const categories = [
 ];
 
 export function CategoriesFilter() {
+  const { push } = useRouter();
   return (
     <ScrollView
       horizontal
@@ -21,6 +23,9 @@ export function CategoriesFilter() {
     >
       {categories.map((category) => (
         <TouchableOpacity
+          onPress={() =>
+            push({ pathname: '/products', params: { category: category.id } })
+          }
           key={category.id}
           style={{ backgroundColor: `${colors.secondary}35` }}
           className="flex-row items-center gap-1.5 rounded-full p-1"
