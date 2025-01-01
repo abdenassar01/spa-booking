@@ -11,10 +11,9 @@ export default function Cart() {
   return (
     <RootWrapper className="container">
       <WithGoBackHeader isCart />
-      <ScrollView
-        className="border"
-        style={{ height: height - 150 }}
-      ></ScrollView>
+      <ScrollView className="border" style={{ height: height - 150 }}>
+        <Text>To be implemented</Text>
+      </ScrollView>
       <View className="border-t border-border pt-3">
         <View className="container flex-row items-center justify-between gap-5">
           <View>

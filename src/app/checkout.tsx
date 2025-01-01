@@ -2,17 +2,20 @@ import { Link } from 'expo-router';
 import React from 'react';
 import { Dimensions, ScrollView, Text, View } from 'react-native';
 
-import { RootWrapper, WithGoBackHeader } from '@/components/ui';
+import {
+  PaymentLivraisonSection,
+  RootWrapper,
+  WithGoBackHeader,
+} from '@/components/ui';
 
 export default function Checkout() {
   const { height } = Dimensions.get('window');
   return (
     <RootWrapper className="container">
       <WithGoBackHeader isCart />
-      <ScrollView
-        className="border"
-        style={{ height: height - 150 }}
-      ></ScrollView>
+      <ScrollView className="mt-4" style={{ height: height - 170 }}>
+        <PaymentLivraisonSection />
+      </ScrollView>
       <View className="border-t border-border pt-3">
         <View className="container flex-row items-center justify-between gap-5">
           <View>

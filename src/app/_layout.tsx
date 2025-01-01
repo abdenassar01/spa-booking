@@ -36,6 +36,10 @@ export default function RootLayout() {
           <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
           <Stack.Screen name="products/[id]" options={{ headerShown: false }} />
           <Stack.Screen name="checkout" options={{ headerShown: false }} />
+          <Stack.Screen
+            name="profile/address"
+            options={{ headerShown: false }}
+          />
           <Stack.Screen name="orders" options={{ headerShown: false }} />
           <Stack.Screen
             name="payment-success"
