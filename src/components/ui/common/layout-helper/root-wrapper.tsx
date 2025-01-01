@@ -11,10 +11,16 @@ export function RootWrapper({
   className?: string;
 }) {
   return (
-    <View
-      className={cn(className, Platform.OS === 'ios' ? 'pt-16' : 'pb-5 pt-2')}
-    >
-      {children}
+    <View className="flex-1 bg-backgroundSecondary">
+      <View
+        className={cn(
+          '',
+          className,
+          Platform.OS === 'ios' ? 'pt-16' : 'pb-5 pt-2'
+        )}
+      >
+        {children}
+      </View>
     </View>
   );
 }

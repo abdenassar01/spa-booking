@@ -26,7 +26,10 @@ export default function RootLayout() {
   }
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView
+      className="bg-backgroundSecondary"
+      style={{ flex: 1 }}
+    >
       <Stack>
         <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
