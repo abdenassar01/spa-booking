@@ -34,6 +34,7 @@ export default function RootLayout() {
       <BottomSheetModalProvider>
         <Stack>
           <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+          <Stack.Screen name="products/[id]" options={{ headerShown: false }} />
           <Stack.Screen name="+not-found" />
         </Stack>
       </BottomSheetModalProvider>

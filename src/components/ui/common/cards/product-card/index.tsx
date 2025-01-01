@@ -25,7 +25,13 @@ export function ProductCard({ product, className }: Props) {
   const { push } = useRouter();
 
   return (
-    <View
+    <TouchableOpacity
+      onPress={() =>
+        push({
+          pathname: `/products/[id]`,
+          params: { id: product.id },
+        })
+      }
       style={{ backgroundColor: `${colors.secondary}35` }}
       className={cn('w-[97%] rounded-xl p-2', className)}
     >
@@ -58,6 +64,6 @@ export function ProductCard({ product, className }: Props) {
         </Text>
         <Text className="rounded bg-secondary p-1 text-[9px] text-primary">{`-${product.reduction}%`}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
