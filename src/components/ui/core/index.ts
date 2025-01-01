@@ -1,1 +1,1 @@
-export { SearchBar } from './home';
+export * from './home';

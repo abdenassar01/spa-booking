@@ -12,7 +12,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded] = useFonts({
-    // SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    Poppins: require('../../assets/fonts/Poppins-Regular.ttf'),
   });
 
   useEffect(() => {
@@ -32,6 +32,7 @@ export default function RootLayout() {
     >
       <Stack>
         <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+        <Stack.Screen name="filter-products" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

@@ -11,7 +11,7 @@ interface SearchBarProps {
 
 export function SearchBar({ onChange }: SearchBarProps) {
   return (
-    <View className="my-3">
+    <View className="">
       <View className="w-full">
         <Input
           onChangeText={onChange}
