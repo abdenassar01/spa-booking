@@ -1,5 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import colors from 'configs/colors';
+import { useRouter } from 'expo-router';
 import React from 'react';
 import {
   Dimensions,
@@ -18,6 +19,7 @@ import {
 } from '@/components/ui';
 
 export default function ProductDetails() {
+  const { push } = useRouter();
   return (
     <RootWrapper className="">
       <View className="container">
@@ -74,7 +76,10 @@ export default function ProductDetails() {
       </View>
 
       <View className="border-t border-border pt-3">
-        <TouchableOpacity className="container items-center justify-center rounded-full bg-primary p-4">
+        <TouchableOpacity
+          onPress={() => push('/cart')}
+          className="container items-center justify-center rounded-full bg-primary p-4"
+        >
           <Text className="font-medium text-white">Ajouter ou lot</Text>
         </TouchableOpacity>
       </View>

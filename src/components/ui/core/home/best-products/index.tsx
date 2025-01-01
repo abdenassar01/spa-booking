@@ -100,6 +100,7 @@ export function BestProductsSection() {
   return (
     <View>
       <FlashList
+        estimatedItemSize={20}
         contentContainerClassName="mt-2"
         ItemSeparatorComponent={() => <View className="h-3" />}
         keyExtractor={(item) => `product-item-${item.id.toString()}`}
