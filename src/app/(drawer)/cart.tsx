@@ -2,7 +2,7 @@ import { AntDesign } from '@expo/vector-icons';
 import colors from 'configs/colors';
 import { Link } from 'expo-router';
 import React from 'react';
-import { Dimensions, ScrollView, Text, View } from 'react-native';
+import { Dimensions, Platform, ScrollView, Text, View } from 'react-native';
 
 import { CartItemsList, RootWrapper, WithGoBackHeader } from '@/components/ui';
 
@@ -11,7 +11,10 @@ export default function Cart() {
   return (
     <RootWrapper className="container">
       <WithGoBackHeader isCart />
-      <ScrollView className="mt-3" style={{ height: height - 170 }}>
+      <ScrollView
+        className="mt-3"
+        style={{ height: height - (Platform.OS === 'ios' ? 170 : 110) }}
+      >
         <CartItemsList />
       </ScrollView>
       <View className="border-t border-border pt-3">

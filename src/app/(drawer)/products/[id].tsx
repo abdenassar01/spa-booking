@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 import { Ionicons } from '@expo/vector-icons';
 import colors from 'configs/colors';
 import { useRouter } from 'expo-router';
@@ -5,6 +6,7 @@ import React from 'react';
 import {
   Dimensions,
   Image,
+  Platform,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -25,12 +27,16 @@ export default function ProductDetails() {
       <View className="container">
         <Header />
       </View>
-      <View
-        className=""
-        style={{ height: Dimensions.get('window').height - 150 }}
+      <ScrollView
+        className="pt-3"
+        style={{
+          height:
+            Dimensions.get('window').height -
+            (Platform.OS === 'ios' ? 150 : 100),
+        }}
       >
         <ImagesGallery />
-        <ScrollView className="container mt-3 gap-3">
+        <View className="container gap-3">
           <Text className="font-medium">
             Trousse en velours promo fin d'année 2023, contenant 1 CREME
             FONDANTE HYDRA ORIGINEL 50 ML Acheté
@@ -72,8 +78,8 @@ export default function ProductDetails() {
             it to make a type specimen book. It has survived not only five
             centuries, but also the leap into
           </Text>
-        </ScrollView>
-      </View>
+        </View>
+      </ScrollView>
 
       <View className="border-t border-border pt-3">
         <TouchableOpacity

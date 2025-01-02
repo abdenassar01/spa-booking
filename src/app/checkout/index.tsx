@@ -1,6 +1,6 @@
 import { Link } from 'expo-router';
 import React from 'react';
-import { Dimensions, ScrollView, Text, View } from 'react-native';
+import { Dimensions, Platform, ScrollView, Text, View } from 'react-native';
 
 import {
   CartProductList,
@@ -19,7 +19,7 @@ export default function Checkout() {
       <ScrollView
         contentContainerClassName="gap-3"
         className="mt-4"
-        style={{ height: height - 170 }}
+        style={{ height: height - (Platform.OS === 'ios' ? 170 : 113) }}
       >
         <PaymentLivraisonSection />
         <CartProductList />
