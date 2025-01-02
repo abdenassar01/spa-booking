@@ -15,7 +15,7 @@ export default function HomeScreen() {
   const { push } = useRouter();
 
   return (
-    <RootWrapper className="p-22 container">
+    <RootWrapper className="container">
       <Header />
       <ScrollView
         contentContainerClassName="gap-3 mt-3"

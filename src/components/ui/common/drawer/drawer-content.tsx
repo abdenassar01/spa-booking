@@ -3,7 +3,14 @@ import { type DrawerContentComponentProps } from '@react-navigation/drawer';
 import colors from 'configs/colors';
 import { usePathname } from 'expo-router';
 import React from 'react';
-import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Image,
+  Platform,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
 import { cn } from '@/lib/helpers';
 
@@ -78,7 +85,12 @@ export function DrawerContent({
   const pathname = usePathname();
 
   return (
-    <RootWrapper className="flex-1 gap-2 bg-primary p-2 pl-0">
+    <RootWrapper
+      className={cn(
+        'flex-1 gap-2 bg-primary p-2 pl-0',
+        Platform.OS === 'android' ? 'pt-8' : ''
+      )}
+    >
       <ScrollView
         contentContainerClassName="flex-1"
         showsVerticalScrollIndicator={false}

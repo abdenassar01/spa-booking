@@ -28,7 +28,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>spa-booking-nativewind</string>
-          <string>com.spa-booking-nativewind.development</string>
+          <string>com.spaBookingNativewind.staging</string>
         </array>
       </dict>
       <dict>

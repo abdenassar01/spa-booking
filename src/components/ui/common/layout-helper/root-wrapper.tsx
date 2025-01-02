@@ -16,7 +16,7 @@ export function RootWrapper({
         className={cn(
           '',
           className,
-          Platform.OS === 'ios' ? 'pt-16' : 'pb-5 pt-2'
+          Platform.OS === 'ios' ? 'pt-16' : 'pb-5 pt-8'
         )}
       >
         {children}

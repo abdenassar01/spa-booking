@@ -34,12 +34,12 @@ require('dotenv').config({
 
 // TODO: Replace these values with your own
 
-const BUNDLE_ID = 'com.spa-booking-nativewind'; // ios bundle id
-const PACKAGE = 'com.spa-booking-nativewind'; // android package name
-const NAME = 'spa-booking-nativewind'; // app name
-const EXPO_ACCOUNT_OWNER = 'expo-owner'; // expo account owner
-const EAS_PROJECT_ID = 'c3e1075b-6fe7-4686-aa49-35b46a229044'; // eas project id
-const SCHEME = 'spa-booking-nativewind'; // app scheme
+const BUNDLE_ID = 'com.spaBooking'; // ios bundle id
+const PACKAGE = 'com.spaBooking'; // android package name
+const NAME = 'spa-booking'; // app name
+const EXPO_ACCOUNT_OWNER = 'compiledideas'; // expo account owner
+const EAS_PROJECT_ID = '3ef3a7f3-72b4-4faa-89a2-f7ace441f54c'; // eas project id
+const SCHEME = 'spa-booking'; // app scheme
 
 /**
  * We declare a function withEnvSuffix that will add a suffix to the variable name based on the APP_ENV
