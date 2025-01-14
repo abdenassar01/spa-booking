@@ -36,7 +36,7 @@ require('dotenv').config({
 
 const BUNDLE_ID = 'com.spaBooking'; // ios bundle id
 const PACKAGE = 'com.spaBooking'; // android package name
-const NAME = 'spa-booking'; // app name
+const NAME = 'spa'; // app name
 const EXPO_ACCOUNT_OWNER = 'compiledideas'; // expo account owner
 const EAS_PROJECT_ID = '3ef3a7f3-72b4-4faa-89a2-f7ace441f54c'; // eas project id
 const SCHEME = 'spa-booking'; // app scheme

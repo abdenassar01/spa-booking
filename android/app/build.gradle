@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.spaBookingNativewind.staging'
+    namespace 'com.spaBooking.staging'
     defaultConfig {
-        applicationId 'com.spaBookingNativewind.staging'
+        applicationId 'com.spaBooking.staging'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

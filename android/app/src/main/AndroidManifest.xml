@@ -28,6 +28,9 @@
         <data android:scheme="com.spaBookingNativewind.staging"/>
         <data android:scheme="exp+obytesapp"/>
         <data android:scheme="com.spaBookingNativewind.development"/>
+        <data android:scheme="spa-booking"/>
+        <data android:scheme="com.spaBooking.staging"/>
+        <data android:scheme="exp+spa-booking"/>
       </intent-filter>
     </activity>
   </application>
