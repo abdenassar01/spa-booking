@@ -15,15 +15,15 @@ export default function HomeScreen() {
   const { push } = useRouter();
 
   return (
-    <RootWrapper className="container">
+    <RootWrapper className="mx-1.5">
       <Header />
       <ScrollView
         contentContainerClassName="gap-3 mt-3"
         showsVerticalScrollIndicator={false}
       >
         <SearchBar onChange={(text) => console.log(text)} />
-        <CategoriesFilter />
         <AdBanner />
+        <CategoriesFilter />
         <View className="flex-row items-center justify-between">
           <Text className="text-base font-bold">Meilleurs choix</Text>
           <TouchableOpacity onPress={() => push({ pathname: '/products' })}>

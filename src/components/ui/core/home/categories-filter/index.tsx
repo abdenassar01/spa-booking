@@ -1,8 +1,6 @@
-import colors from 'configs/colors';
 import { useRouter } from 'expo-router';
 import React from 'react';
-import { Image, Text, TouchableOpacity } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 
 const categories = [
   { id: 1, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
@@ -10,33 +8,32 @@ const categories = [
   { id: 3, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
   { id: 4, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
   { id: 5, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
+  { id: 6, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
+  { id: 7, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
+  { id: 8, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
+  { id: 9, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
+  { id: 10, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
 ];
 
 export function CategoriesFilter() {
   const { push } = useRouter();
   return (
-    <ScrollView
-      horizontal
-      contentContainerClassName="gap-2.5"
-      showsHorizontalScrollIndicator={false}
-      className=""
-    >
+    <View className="flex-row flex-wrap justify-between">
       {categories.map((category) => (
         <TouchableOpacity
           onPress={() =>
             push({ pathname: '/products', params: { category: category.id } })
           }
           key={category.id}
-          style={{ backgroundColor: `${colors.secondary}35` }}
-          className="flex-row items-center gap-1.5 rounded-full p-1"
+          className="w-1/5 flex-col items-center gap-1.5 p-1"
         >
           <Image
             source={{ uri: category.icon }}
-            className="size-7 rounded-full"
+            className="size-10 rounded-full"
           />
           <Text className="text-center text-xs">{category.label}</Text>
         </TouchableOpacity>
       ))}
-    </ScrollView>
+    </View>
   );
 }
