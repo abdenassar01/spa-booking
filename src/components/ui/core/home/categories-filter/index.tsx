@@ -3,16 +3,16 @@ import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 
 const categories = [
-  { id: 1, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 2, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 3, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 4, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 5, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 6, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 7, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 8, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 9, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
-  { id: 10, label: 'Soins Cheveux', icon: 'https://i.imgur.com/oN5IHc2.png' },
+  { id: 1, label: 'Soins Cheveux', icon: 'https://imgur.com/E6FR2oY.png' },
+  { id: 2, label: 'Soins Cheveux', icon: 'https://imgur.com/7niR6be.png' },
+  { id: 3, label: 'Soins Cheveux', icon: 'https://imgur.com/7niR6be.png' },
+  { id: 4, label: 'Soins Cheveux', icon: 'https://imgur.com/E6FR2oY.png' },
+  { id: 5, label: 'Soins Cheveux', icon: 'https://imgur.com/E6FR2oY.png' },
+  { id: 6, label: 'Soins Cheveux', icon: 'https://imgur.com/E6FR2oY.png' },
+  { id: 7, label: 'Soins Cheveux', icon: 'https://imgur.com/7niR6be.png' },
+  { id: 8, label: 'Soins Cheveux', icon: 'https://imgur.com/E6FR2oY.png' },
+  { id: 9, label: 'Soins Cheveux', icon: 'https://imgur.com/7niR6be.png' },
+  { id: 10, label: 'Soins Cheveux', icon: 'https://imgur.com/7niR6be.png' },
 ];
 
 export function CategoriesFilter() {

@@ -98,7 +98,7 @@ const products = [
 
 export function BestProductsSection() {
   return (
-    <View>
+    <View className="pb-20">
       <FlashList
         estimatedItemSize={20}
         contentContainerClassName="mt-2"

@@ -18,12 +18,6 @@ export function Header() {
         <TouchableOpacity onPress={() => navigate('/cart')}>
           <Image source={require('assets/icons/cart.png')} className="size-7" />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigate('/explore')}>
-          <Image
-            source={require('assets/icons/explore.png')}
-            className="size-7"
-          />
-        </TouchableOpacity>
       </View>
     </View>
   );

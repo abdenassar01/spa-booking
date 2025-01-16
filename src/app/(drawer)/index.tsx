@@ -1,5 +1,5 @@
 import { useRouter } from 'expo-router';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import {
@@ -24,10 +24,13 @@ export default function HomeScreen() {
         <SearchBar onChange={(text) => console.log(text)} />
         <AdBanner />
         <CategoriesFilter />
-        <View className="flex-row items-center justify-between">
+        <View className="flex-row items-center gap-2">
           <Text className="text-base font-bold">Meilleurs choix</Text>
           <TouchableOpacity onPress={() => push({ pathname: '/products' })}>
-            <Text className="text-sm text-primary underline">Voir Tout</Text>
+            <Image
+              className="size-8"
+              source={require('assets/icons/arrow-right.png')}
+            />
           </TouchableOpacity>
         </View>
         <BestProductsSection />
