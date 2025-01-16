@@ -39,7 +39,6 @@ export default function RootLayout() {
             name="profile/address"
             options={{ headerShown: false }}
           />
-          <Stack.Screen name="orders" />
           <Stack.Screen name="checkout" />
           <Stack.Screen name="+not-found" />
         </Stack>

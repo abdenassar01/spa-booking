@@ -3,11 +3,11 @@ import { Text } from 'react-native';
 
 import { Header, RootWrapper } from '@/components/ui';
 
-export default function Salons() {
+export default function Orders() {
   return (
     <RootWrapper className="container">
       <Header />
-      <Text>Salons</Text>
+      <Text>Orders</Text>
     </RootWrapper>
   );
 }
