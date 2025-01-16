@@ -12,10 +12,13 @@ export function WithGoBackHeader({ isCart }: Props) {
   return (
     <View className="flex-row items-center justify-between">
       <TouchableOpacity onPress={() => canGoBack() && back()}>
-        <Image source={require('assets/icons/back.png')} className="size-7" />
+        <Image
+          source={require('assets/icons/back.png')}
+          className="!h-7 !w-7"
+        />
       </TouchableOpacity>
       <Image
-        className="h-6 w-32"
+        className="!h-6 !w-32"
         source={require('assets/icons/logo/header-logo.png')}
       />
       <View className="flex-row gap-1">
@@ -23,7 +26,7 @@ export function WithGoBackHeader({ isCart }: Props) {
           <TouchableOpacity onPress={() => navigate('/cart')}>
             <Image
               source={require('assets/icons/cart.png')}
-              className="size-7"
+              className="!h-7 !w-7"
             />
           </TouchableOpacity>
         )}

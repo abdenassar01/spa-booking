@@ -32,11 +32,11 @@ export default function ProductDetails() {
         style={{
           height:
             Dimensions.get('window').height -
-            (Platform.OS === 'ios' ? 150 : 100),
+            (Platform.OS !== 'android' ? 150 : 100),
         }}
       >
         <ImagesGallery />
-        <View className="container gap-3">
+        <View className="mx-1.5 mt-5 gap-3">
           <Text className="font-medium">
             Trousse en velours promo fin d'année 2023, contenant 1 CREME
             FONDANTE HYDRA ORIGINEL 50 ML Acheté
@@ -44,20 +44,19 @@ export default function ProductDetails() {
           <View className="mt-3 flex-row items-center justify-between">
             <View className="flex-row items-center gap-2">
               <Image
-                className="size-12 rounded-full border border-border"
+                className="!h-12 !w-12 rounded-full border border-border"
                 source={require('assets/icons/company-logo.png')}
               />
               <View className="flex-row items-center gap-1">
                 <Text className="font-bold underline ">BEAUTY CONCEPT </Text>
-                <Text className="text-gray">(124)</Text>
+                <Text className="text-gray">
+                  (124
+                  <Ionicons name="heart" size={14} color={colors.gray} />)
+                </Text>
               </View>
             </View>
             <TouchableOpacity className="rounded-full bg-border p-2">
-              <Ionicons
-                name="chatbubble-ellipses-outline"
-                size={22}
-                color={colors.black}
-              />
+              <Ionicons name="share" size={22} color={colors.black} />
             </TouchableOpacity>
           </View>
 

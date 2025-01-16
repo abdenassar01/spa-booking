@@ -3,9 +3,9 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 import {
   BestProductsSection,
-  CategoriesFilter,
   Filter,
   Header,
+  InlineCategoryFilter,
   RootWrapper,
   SearchBar,
 } from '@/components/ui';
@@ -20,7 +20,8 @@ export default function ProductsList() {
       >
         <SearchBar onChange={(text) => console.log(text)} />
         <Filter />
-        <CategoriesFilter />
+        <InlineCategoryFilter />
+        {/* <CategoriesFilter /> */}
         <BestProductsSection />
       </ScrollView>
     </RootWrapper>

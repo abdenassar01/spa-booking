@@ -8,15 +8,21 @@ export function Header() {
   return (
     <View className="w-full flex-row items-center justify-between">
       <TouchableOpacity onPress={() => dispatch({ type: 'TOGGLE_DRAWER' })}>
-        <Image source={require('assets/icons/menu.png')} className="size-7" />
+        <Image
+          source={require('assets/icons/menu.png')}
+          className="aspect-square !h-7 !w-7"
+        />
       </TouchableOpacity>
       <Image
-        className="h-6 w-32"
+        className="!h-6 !w-32"
         source={require('assets/icons/logo/header-logo.png')}
       />
       <View className="flex-row gap-1">
         <TouchableOpacity onPress={() => navigate('/cart')}>
-          <Image source={require('assets/icons/cart.png')} className="size-7" />
+          <Image
+            source={require('assets/icons/cart.png')}
+            className="!h-7 !w-7"
+          />
         </TouchableOpacity>
       </View>
     </View>

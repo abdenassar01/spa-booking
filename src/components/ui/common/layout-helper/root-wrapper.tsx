@@ -12,7 +12,9 @@ export function RootWrapper({
 }) {
   return (
     <View className="flex-1 bg-backgroundSecondary">
-      <View className={cn('ios:pt-16 pt-10', className)}>{children}</View>
+      <View className={cn('ios:pt-16 android:pt-10 pt-5', className)}>
+        {children}
+      </View>
     </View>
   );
 }
