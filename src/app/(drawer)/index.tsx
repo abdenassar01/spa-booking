@@ -1,5 +1,6 @@
+import { MaterialIcons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 import {
@@ -26,11 +27,11 @@ export default function HomeScreen() {
         <CategoriesFilter />
         <View className="flex-row items-center gap-2">
           <Text className="text-base font-bold">Meilleurs choix</Text>
-          <TouchableOpacity onPress={() => push({ pathname: '/products' })}>
-            <Image
-              className="size-8"
-              source={require('assets/icons/arrow-right.png')}
-            />
+          <TouchableOpacity
+            className="rounded-full bg-background p-1"
+            onPress={() => push({ pathname: '/products' })}
+          >
+            <MaterialIcons size={16} name="keyboard-arrow-right" />
           </TouchableOpacity>
         </View>
         <BestProductsSection />
