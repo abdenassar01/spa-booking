@@ -16,16 +16,6 @@ const routes = [
     link: 'index',
   },
   {
-    icon: 'location-on',
-    label: 'Explore salon',
-    link: 'salons/index',
-  },
-  {
-    icon: 'explore',
-    label: 'Tout les salons',
-    link: 'explore',
-  },
-  {
     icon: 'store',
     label: 'Marketplace',
     link: 'marketplace/index',
@@ -39,11 +29,6 @@ const routes = [
     icon: 'favorite',
     label: 'Favoris',
     link: 'favorites',
-  },
-  {
-    icon: 'access-time',
-    label: 'Reservations',
-    link: 'reservations',
   },
   {
     icon: 'message',
