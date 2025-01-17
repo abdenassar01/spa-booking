@@ -48,17 +48,17 @@ export function PaymentMethod() {
                     <View className="size-3 rounded-full bg-white" />
                   )}
                 </View>
-                <Image className="size-[18px]" source={item.icon} />
+                <Image className="!h-4 !w-[18px]" source={item.icon} />
                 <Text className="text-[10px]">{item.label}</Text>
               </TouchableOpacity>
               {item.isNew && (
                 <View className="-mt-2 ml-6 flex-row">
                   <Image
-                    className="size-[18px]"
+                    className="!h-4 !w-[18px]"
                     source={require('assets/icons/MasterCard.png')}
                   />
                   <Image
-                    className="size-[18px]"
+                    className="!h-4 !w-[18px]"
                     source={require('assets/icons/Visa.png')}
                   />
                 </View>
